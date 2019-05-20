@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Auva Wellness - Gym Workout</title>	
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<!-- Wrapper -->
+	<div class="wrapper">
+		<!-- Logo -->
+		 <div class="row-fluid logobar">
+      <div class="span6">
+             <nav>
+        <div id="logo">Aura Wellness</div>
+
+         <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                    <!-- First Tier Drop Down -->
+                         <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="register.html">Form</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="display.php">Data</a>
+                </li>
+              </ul>
+                </li>
+                    <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">YOGA<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="begineer.html">Beginners</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="intermediate.html">Intermediate</a>
+                </li>
+                 <li>
+                  <a class="dropdown-item" href="advanced.html">Advanced</a>
+                </li>
+              </ul>
+                </li>
+                <li><a href="gym.html">Gym Workout</a></li>
+                 <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sample Diet Plans<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="diet.html">Diet Plan 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="diet2.html">Diet Plan 2</a>
+                </li>
+                 <li>
+                  <a class="dropdown-item" href="diet3.html">Diet Plan 3</a>
+                </li>
+              </ul>
+            </li>
+             <li><a href="aboutus.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div>
+		<!-- content -->
+		<div class="container">
+			<div class="row-fluid about-us">
+				<div class="content">
+							<html>
+<head>
+<title>Registration Form</title>
+
+</head>
+ 
+<body>
+<h3>REGISTRATION FORM</h3>
+<form id="form1" action="datainsert.php" method="post" autocomplete="off" />
+  <div class="form-row">
+    <td colspan=4>
+</td>
+<table align="center" cellpadding = "10">
+ 
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td>FIRST NAME</td>
+<td><input type="text" name="first_name" maxlength="30"/>
+
+</td>
+</tr>
+ 
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" name="last_name" maxlength="30"/>
+
+</td>
+</tr>
+ 
+<!----- Date Of Birth -------------------------------------------------------->
+<tr>
+<td>DATE OF BIRTH</td>
+ 
+<td>
+      <input type="date" value="<?php echo date('Y-m-d'); ?>" class="form-control" name="dob" id="dob" onkeyup="this.value = this.value.toUpperCase();" required>
+    </div>
+</td>
+</tr>
+ 
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="email" maxlength="100" /></td>
+</tr>
+ 
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" name="phone" maxlength="10" />
+(10 digit number)
+</td>
+</tr>
+ 
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="gender" value="Male" required/>
+Female <input type="radio" name="gender" value="Female" required/>
+</td>
+</tr>
+ 
+<!----- Address ---------------------------------------------------------->
+<tr>
+<td>ADDRESS <br /><br /><br /></td>
+<td><textarea name="address" rows="4" cols="30"></textarea></td>
+</tr>
+ 
+<!----- City ---------------------------------------------------------->
+<tr>
+<td>CITY</td>
+<td><input type="text" name="city" maxlength="30" />
+
+</td>
+</tr>
+ 
+<!----- Pin Code ---------------------------------------------------------->
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="pincode" maxlength="6" />
+
+</td>
+</tr>
+ 
+<!----- State ---------------------------------------------------------->
+<tr>
+<td>STATE</td>
+<td><input type="text" name="state" maxlength="30" />
+</td>
+</tr>
+ 
+<!----- Country ---------------------------------------------------------->
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" name="country" value="USA" readonly="readonly" /></td>
+</tr>
+ 
+
+ 
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+ 
+</form>
+ 
+</body>
+</html>
+<script type="text/javascript">
+	function resetform() {
+document.getElementById("form1").reset();
+}
+</script>
+
+
+<style type="text/css">
+	h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:SlateBlue;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri; 
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:; 
+  background-color: SlateBlue; 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}
+</style>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+			<div class="footer">
+			<div class="address">
+				<ul>
+					<li>USA</li>
+					<li> info@auvawellness.com</li>
+					<li>+1 9139402878</li>
+				</ul>
+			</div>
+		</div>
+</body>	
+</html>
+ 
